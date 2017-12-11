@@ -3,8 +3,8 @@
 LIMIT=$(echo 1*1024 | bc)
 SIZE=$(free -m| grep Mem |tr -s " " " " | awk {'print $4'})
 
-CHAT_ID="117542501"
-TOKEN="494248488:AAFg6gpSt1pc7i5_aQz6G0Oe_vvaxNicCcw"
+CHAT_ID=""
+TOKEN=""
 URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 
 if [ $SIZE -le $LIMIT ]; then
