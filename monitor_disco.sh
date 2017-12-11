@@ -8,6 +8,6 @@ TOKEN=""
 URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 
 if [ $SIZE -ge $LIMIT ]; then
-        MSG="Servidor InstaGuard-Azure. Limite de disco excedido. O DIR / esta com $SIZE"
+        MSG="Servidor NOME DO SERVIDOR. Limite de disco excedido. O DIR / esta com $SIZE"
         /usr/bin/curl -s -X POST $URL -d chat_id=$CHAT_ID -d text="$MSG" 2&> /dev/null
 fi
